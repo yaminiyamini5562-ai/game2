@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: #f0f8ff;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.scoreboard {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#lessonBox {
+    margin: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

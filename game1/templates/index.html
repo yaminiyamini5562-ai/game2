@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamified Learning with Mood Detection</title>
+    <script src="https://unpkg.com/face-api.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🎮 Smart Learning Platform</h1>
+
+<div class="container">
+    <video id="video" width="400" height="300" autoplay muted></video>
+
+    <h2 id="mood">Mood: Detecting...</h2>
+
+    <div class="scoreboard">
+        <p>Points: <span id="points">0</span></p>
+        <p>Level: <span id="level">1</span></p>
+    </div>
+
+    <div id="lessonBox">
+        <h3>Lesson Recommendation</h3>
+        <p id="lessonText">Waiting for mood detection...</p>
+    </div>
+
+    <button onclick="startQuiz()">Start Quiz</button>
+
+    <div id="quizBox"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
